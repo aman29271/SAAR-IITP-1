@@ -466,6 +466,21 @@
     </script>
     
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
-
+<script>
+  $(document).ready(function(){
+      
+      $(window).scroll(function(){
+        var scrolltop = $(window).scrollTop();
+        if(scrolltop <50){
+            $('.sidebar-navigation.hidde-sm.hidden-xs').removeClass("scroll");
+            $('.sidebar-navigation ul').removeClass("margin-cut");
+        }
+        else if(scrolltop >50){
+            $('.sidebar-navigation.hidde-sm.hidden-xs').addClass("scroll");
+            $('.sidebar-navigation ul').addClass("margin-cut");
+        }
+      })
+  })
+</script>
 </body>
 </html>
