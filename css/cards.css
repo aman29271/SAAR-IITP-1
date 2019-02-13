@@ -319,6 +319,8 @@ header {
   position: fixed;
   background-color: #003C4D;
   z-index: 10;
+	  transition: all 0.5s ease-in-out;
+
 }
 
 .sidebar-navigation .logo {
@@ -359,6 +361,7 @@ header {
   margin-left: 45px;
   list-style: none;
   padding: 0;
+	transition: all 0.5s ease-in-out;
 }
 
 .sidebar-navigation li{
@@ -1378,4 +1381,10 @@ header {
     #blog .row {
         width:100%;
     }
+}
+.scroll{
+  width: 15% !important;
+}
+.margin-cut{
+  margin-left: 0px !important;
 }
